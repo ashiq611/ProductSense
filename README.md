@@ -43,13 +43,16 @@ npm install
 Create a `.env` file in the root directory:
 PORT=5000
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.gtntxtu.mongodb.net/product
+
+<br>
+
 NODE_ENV=development
 
 
 4. Start MongoDB
 For local MongoDB
 mongod
-
+<br>
 Or use MongoDB Atlas connection string
 
 5. Run the application
@@ -142,14 +145,6 @@ The product code is auto-generated using the following rules:
 4. Generate an MD5 hash of the product name (first 8 characters)
 5. Format: `<hash>-<startIndex><substring><endIndex>`
 
-### Example
-**Product Name:** "Alpha Sorter"
-
-- Longest increasing substrings: "alp" (from "Alpha") and "ort" (from "Sorter")
-- Concatenated: "alport"
-- Start index: 0, End index: 8
-- Hash: "p48asd4" (example)
-- **Generated Code:** `p48asd4-0alport8`
 
 ## Error Handling
 
