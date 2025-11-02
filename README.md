@@ -63,7 +63,7 @@ A RESTful API for managing products and categories built with Express.js, MongoD
 ## Installation
 
 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/ashiq611/ProductSense.git
 cd product-management-api
 
 
