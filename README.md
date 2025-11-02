@@ -20,39 +20,8 @@ A RESTful API for managing products and categories built with Express.js, MongoD
 
 ### Entity Relationship Diagram
 
-┌─────────────────────────────────────┐
-│ Category │
-├─────────────────────────────────────┤
-│ _id: ObjectId (PK) │
-│ name: String (unique) │
-│ description: String │
-│ isActive: Boolean │
-│ createdAt: Date │
-│ updatedAt: Date │
-└─────────────────────────────────────┘
-│
-│ 1
-│
-│ has many
-│
-│ N
-▼
-┌─────────────────────────────────────┐
-│ Product │
-├─────────────────────────────────────┤
-│ _id: ObjectId (PK) │
-│ name: String │
-│ description: String │
-│ price: Number │
-│ discount: Number (0-100) │
-│ image: String (URL) │
-│ status: String (enum) │
-│ productCode: String (unique) │
-│ category: ObjectId (FK) ───────────►│
-│ createdAt: Date │
-│ updatedAt: Date │
-│ finalPrice: Virtual Field │
-└─────────────────────────────────────┘
+
+![Product Management ER Diagram](images/er.png)
 
 
 ### Relationships
@@ -64,7 +33,6 @@ A RESTful API for managing products and categories built with Express.js, MongoD
 
 1. Clone the repository
 git clone https://github.com/ashiq611/ProductSense.git
-cd product-management-api
 
 
 2. Install dependencies
